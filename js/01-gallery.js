@@ -20,7 +20,7 @@ function createGalleryItems ({ preview, original, description}) {
 const addGalleryItems = galleryItems.map(createGalleryItems).join('');
 galleryContainer.insertAdjacentHTML ('beforeend', addGalleryItems);
 
-/*Додаємо подію кліка на картинку i появи модального вікна*/
+/*Додаємо подію кліка на картинку, появи та закривання модального вікна*/
 
 
 galleryContainer.addEventListener("click", openModalPicture);
@@ -52,11 +52,3 @@ function openModalPicture(event) {
         }
     }
 };
-
-
-
-
-
-
-
-
